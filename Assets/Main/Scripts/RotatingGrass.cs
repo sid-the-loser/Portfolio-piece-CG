@@ -1,9 +1,10 @@
+using Unity.Mathematics;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class RotatingGrass : MonoBehaviour
 {
-    private float _threshold = 2f;
+    private float _threshold = 1f;
     
     private static Transform _playerTransform;
     
@@ -19,7 +20,7 @@ public class RotatingGrass : MonoBehaviour
 
         if (sqDistance >= _threshold)
         {
-            transform.rotation = Quaternion.identity;
+            transform.rotation = Quaternion.Slerp(transform.rotation, quaternion.identity, Time.deltaTime * 10f);
         }
         else
         {
