@@ -5,12 +5,12 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Main/Scenes/Firewatch Mockup.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Main/Scenes/Harrish'sScene.unity
     guid: f4202e847c03a4b4c876bdf153980ac3
+  - enabled: 0
+    path: Assets/Are you sure/asdgkjhashgashgas.unity
+    guid: d982caba1f9ca644b9f9a2d1b6a03086
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
