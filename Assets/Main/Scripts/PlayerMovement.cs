@@ -53,10 +53,10 @@ public class PlayerMovement : MonoBehaviour
         
         controller.Move(move * (speed * Time.deltaTime));
 
-        if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
+        /*if (Input.GetKeyDown(KeyCode.Space) && _isGrounded)
         {
             _velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
-        }
+        }*/
         
         _velocity.y += gravity * Time.deltaTime;
         controller.Move(_velocity * Time.deltaTime);
