@@ -11,10 +11,12 @@ public class RotatingGrass : MonoBehaviour
     [SerializeField] private float recoverySpeed = 0.1f;
     
     private static Transform _playerTransform;
+    private Quaternion _initialRotation;
     
     void Start()
     {
         _playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
+        _initialRotation = transform.rotation;
     }
 
     void Update()
@@ -24,9 +26,9 @@ public class RotatingGrass : MonoBehaviour
 
         if (sqDistance >= threshold)
         {
-            transform.rotation = Quaternion.Slerp(transform.rotation, quaternion.identity, 
+            transform.rotation = Quaternion.Slerp(transform.rotation, _initialRotation, 
                                                 Time.deltaTime * recoverySpeed);
-            // transform.rotation = quaternion.identity;
+            // transform.rotation = _initialRotation;
         }
         else
         {
