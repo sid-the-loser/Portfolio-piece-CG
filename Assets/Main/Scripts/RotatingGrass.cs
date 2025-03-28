@@ -23,6 +23,8 @@ public class RotatingGrass : MonoBehaviour
     {
         var sqDistance = Mathf.Pow(_playerTransform.position.x - transform.position.x, 2f) + 
                                 Mathf.Pow(_playerTransform.position.z - transform.position.z, 2f);
+        
+// todo add an if here and the other as else if; pretty much turn off the mesh renderer for farther leaves (once)
 
         if (sqDistance >= threshold)
         {
