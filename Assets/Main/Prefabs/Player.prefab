@@ -134,7 +134,7 @@ MonoBehaviour:
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   mouseSensitivity: 100
   headGameObject: {fileID: 1196726267944241026}
 --- !u!143 &3029721244682208822
