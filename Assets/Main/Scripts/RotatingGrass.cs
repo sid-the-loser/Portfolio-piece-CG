@@ -48,7 +48,7 @@ public class RotatingGrass : MonoBehaviour
         }
     }
     
-    private float Q_rsqrt(float number) // implementation of John Carmak's fast inverse sq root
+    private float Q_rsqrt(float number) // implementation of John Carmack's fast inverse sq root
         // referenced from https://en.m.wikipedia.org/wiki/Fast_inverse_square_root
     {
         int i;
